@@ -1,4 +1,4 @@
-# zebra-datawedge
+# zebra_datawedge
 NOTICE: This package is forked from [here](https://github.com/mwaylabs/flutter-zebra-datawedge) to support for null-safety
 
 `Only for Android.`
