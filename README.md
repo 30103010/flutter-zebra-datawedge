@@ -1,6 +1,7 @@
 # zebra-datawedge
 NOTICE: This package is forked from [here](https://github.com/mwaylabs/flutter-zebra-datawedge) to support for null-safety
-Only for Android.
+
+`Only for Android.`
 Based on this example: https://github.com/darryncampbell/DataWedge-Intent-Example-1
 
 This package was created to support hardware scanner for Zebra devices (ET5X) with older DataWedge Version (^5.0).
