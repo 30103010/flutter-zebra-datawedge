@@ -6,15 +6,17 @@ import 'dart:async';
 import 'package:zebra_datawedge/zebra_datawedge.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
-  _MyAppState createState() => _MyAppState();
+  MyAppState createState() => MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> {
   String _data = "waiting...";
   String _labelType = "waiting...";
   String _source = "waiting...";
@@ -25,12 +27,12 @@ class _MyAppState extends State<MyApp> {
     initDataWedgeListener();
   }
 
-// create a listener for data wedge package
+  // create a listener for data wedge package
   Future<void> initDataWedgeListener() async {
     ZebraDataWedge.listenForDataWedgeEvent((response) {
-      if (response != null && response is String)
+      if (response != null && response is String) {
         setState(() {
-          Map<String, dynamic> jsonResponse;
+          Map<String, dynamic>? jsonResponse;
           try {
             jsonResponse = json.decode(response);
           } catch (e) {
@@ -44,6 +46,7 @@ class _MyAppState extends State<MyApp> {
             _source = "An error occured";
           }
         });
+      }
     });
   }
 

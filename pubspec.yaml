@@ -1,7 +1,6 @@
 name: zebra_datawedge
 description: Support hardware scanner for Zebra devices (ET5X) to receive intent and parse it into readable data.
-version: 0.1.2
-author: javaherisaber <m.javaherisaber@gmail.com>
+version: 0.1.3
 homepage: https://github.com/javaherisaber/flutter-zebra-datawedge
 
 environment:

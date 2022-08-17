@@ -1,3 +1,6 @@
+## 0.1.3
+* Update example project with latest flutter version
+ 
 ## 0.1.2
 * Update package description
 
