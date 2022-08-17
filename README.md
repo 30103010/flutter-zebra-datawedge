@@ -53,7 +53,3 @@ As described in the previous written link, you have to set up your profile confi
     });
   }
 ```
-
-# Info
-
-This package is only tested on Zebra ET5X with Android version 5.1.1 and DataWedge version 5.0.17.
