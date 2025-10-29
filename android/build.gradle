@@ -4,26 +4,27 @@ version '1.0'
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral() // MUDANÇA 1: Substituído 'jcenter()'
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        // MUDANÇA 2: Atualizado da antiga 3.5.0
+        classpath 'com.android.tools.build:gradle:7.4.2' 
     }
 }
 
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral() // MUDANÇA 3: Substituído 'jcenter()'
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    namespace 'com.zebra.datawedge.flutter'
-    compileSdkVersion 29
+    namespace 'com.zebra.datawedge.flutter' // Sua correção (está certa)
+    compileSdkVersion 36                  // Sua correção (está certa)
 
     defaultConfig {
         minSdkVersion 16
